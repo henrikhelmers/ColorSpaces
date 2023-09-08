@@ -1,10 +1,14 @@
 import Foundation
 
 public struct LCHColor {
-    public let l: CGFloat     // 0..100
-    public let c: CGFloat     // 0..128
-    public let h: CGFloat     // 0..360
-    public let alpha: CGFloat // 0..1
+    /// 0..100
+    public let l: CGFloat
+    /// 0..128
+    public let c: CGFloat
+    /// 0..360
+    public let h: CGFloat
+    /// 0..1
+    public let alpha: CGFloat
 
     public init (l: CGFloat, c: CGFloat, h: CGFloat, alpha: CGFloat) {
         self.l = l
