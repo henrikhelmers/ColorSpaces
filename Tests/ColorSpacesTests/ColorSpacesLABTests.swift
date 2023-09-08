@@ -1,11 +1,4 @@
-//
-//  ColorSpacesLABTests.swift
-//  ColorSpaces
-//
-//  Created by Tim Wood on 10/5/15.
-//  Copyright © 2015 Tim Wood. All rights reserved.
-//
-
+#if canImport(UIKit)
 import XCTest
 @testable import ColorSpaces
 
@@ -100,3 +93,4 @@ class ColorSpacesLABTests: XCTestCase {
         XCTAssertEqual(quarter.alpha, 0.175, accuracy: 1e-8)
     }
 }
+#endif

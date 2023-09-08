@@ -1,11 +1,4 @@
-//
-//  ColorSpaces.swift
-//  ColorSpaces
-//
-//  Created by Tim Wood on 10/9/15.
-//  Copyright © 2015 Tim Wood. All rights reserved.
-//
-
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Constants
@@ -240,3 +233,4 @@ public struct LCHColor {
         )
     }
 }
+#endif
