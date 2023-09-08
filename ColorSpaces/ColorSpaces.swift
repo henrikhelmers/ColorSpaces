@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Constants
 
-private let RAD_TO_DEG = 180 / CGFloat(M_PI)
+private let RAD_TO_DEG = 180 / CGFloat.pi
 
 private let LAB_E: CGFloat = 0.008856
 private let LAB_16_116: CGFloat = 0.1379310
