@@ -1,3 +1,3 @@
 # ColorSpaces
 
-A description of this package.
+Tiny Swift package to work with LAB & LCH colors
