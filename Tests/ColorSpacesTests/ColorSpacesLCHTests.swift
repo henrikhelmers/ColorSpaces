@@ -1,4 +1,3 @@
-#if canImport(UIKit)
 import XCTest
 @testable import ColorSpaces
 
@@ -114,4 +113,3 @@ class ColorSpacesLCHTests: XCTestCase {
         XCTAssertEqual(b2a75.h, 355, accuracy: 1e-8)
     }
 }
-#endif

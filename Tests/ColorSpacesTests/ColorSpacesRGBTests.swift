@@ -1,10 +1,9 @@
-#if canImport(UIKit)
 import XCTest
 @testable import ColorSpaces
 
 class ColorSpacesRGBTests: XCTestCase {
     func testCreatingRGBFromUIColor() {
-        let color = UIColor(red: 0, green: 0.25, blue: 0.5, alpha: 0.75)
+        let color = AgnosticColor(red: 0, green: 0.25, blue: 0.5, alpha: 0.75)
         let rgb = color.rgbColor()!
         XCTAssertEqual(rgb.r, 0)
         XCTAssertEqual(rgb.g, 0.25)
@@ -15,7 +14,7 @@ class ColorSpacesRGBTests: XCTestCase {
     func testCreatingUIColorFromRGB() {
         let rgb = RGBColor(r: 0.1, g: 0.2, b: 0.3, alpha: 0.4)
         let color = rgb.color()
-        XCTAssertEqual(color, UIColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.4))
+        XCTAssertEqual(color, AgnosticColor(red: 0.1, green: 0.2, blue: 0.3, alpha: 0.4))
     }
 
     func testRGBToXYZRed() {
@@ -91,4 +90,3 @@ class ColorSpacesRGBTests: XCTestCase {
         XCTAssertEqual(quarter.alpha, 0.3, accuracy: 1e-8)
     }
 }
-#endif

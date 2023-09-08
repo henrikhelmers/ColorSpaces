@@ -5,6 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "ColorSpaces",
+    platforms: [
+        .watchOS(.v9),
+        .tvOS(.v16),
+        .iOS(.v16),
+        .macOS(.v13)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
